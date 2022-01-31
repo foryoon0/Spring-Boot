@@ -20,7 +20,7 @@ public class AppConfig { //공연기획자 같은 느낌으로 생각하면된다. 배역에 맞는 배
 	
 	@Bean
 	public MemberService memberService() { //생성자 주입
-		return new MemberServiceImpl(memberRepository());
+		return new MemberServiceImpl(memberRepository()); //반환된 객체
 	} 
 	
 	@Bean

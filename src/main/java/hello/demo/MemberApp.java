@@ -1,6 +1,7 @@
 package hello.demo;
 
-import org.apache.catalina.core.ApplicationContext;
+
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import hello.member.Grade;
