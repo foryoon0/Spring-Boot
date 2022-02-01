@@ -12,9 +12,9 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import hello.discount.DiscountPolicy;
-import hello.discount.FixDiscountPolicy;
-import hello.discount.RateDiscountPolicy;
+import hello.demo.discount.DiscountPolicy;
+import hello.demo.discount.FixDiscountPolicy;
+import hello.demo.discount.RateDiscountPolicy;
 
 public class ApplicationContextExtendsFindTest {
 

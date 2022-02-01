@@ -1,7 +1,7 @@
-package hello.discount;
+package hello.demo.discount;
 
-import hello.member.Grade;
-import hello.member.Member;
+import hello.demo.member.Grade;
+import hello.demo.member.Member;
 
 public class FixDiscountPolicy implements DiscountPolicy{
 

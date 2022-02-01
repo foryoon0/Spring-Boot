@@ -1,15 +1,20 @@
-package hello.order;
+package hello.demo.order;
 
-import hello.discount.DiscountPolicy;
-import hello.member.Member;
-import hello.member.MemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+import hello.demo.discount.DiscountPolicy;
+import hello.demo.member.Member;
+import hello.demo.member.MemberRepository;
+
+@Component
 public class OrderServiceImpl implements OrderService{
 
 	private final MemberRepository memberRepository;
 	private DiscountPolicy discountPolicy;
 	
-
+	
+	@Autowired
 	public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
 		this.memberRepository = memberRepository;
 		this.discountPolicy = discountPolicy;
@@ -24,4 +29,12 @@ public class OrderServiceImpl implements OrderService{
 		return new Order(memberId, itemName, itemPrice, discountPrice);
 	}
 
+	// 테스트 용도
+	public MemberRepository getMemberRepository() {
+		return memberRepository;
+	}
+
 }
+
+
+

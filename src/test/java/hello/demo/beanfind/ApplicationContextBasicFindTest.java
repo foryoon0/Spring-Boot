@@ -10,8 +10,8 @@ import org.springframework.beans.factory.NoSuchBeanDefinitionException;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import hello.demo.AppConfig;
-import hello.member.MemberService;
-import hello.member.MemberServiceImpl;
+import hello.demo.member.MemberService;
+import hello.demo.member.MemberServiceImpl;
 
 public class ApplicationContextBasicFindTest {
 

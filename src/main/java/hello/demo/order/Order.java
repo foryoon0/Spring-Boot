@@ -1,4 +1,4 @@
-package hello.order;
+package hello.demo.order;
 
 public class Order {
 

@@ -12,8 +12,8 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import hello.member.MemberRepository;
-import hello.member.MemoryMemberRepository;
+import hello.demo.member.MemberRepository;
+import hello.demo.member.MemoryMemberRepository;
 
 
 public class ApplicationContextSameBeanFindTest {

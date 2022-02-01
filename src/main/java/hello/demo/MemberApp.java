@@ -4,9 +4,9 @@ package hello.demo;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import hello.member.Grade;
-import hello.member.Member;
-import hello.member.MemberService;
+import hello.demo.member.Grade;
+import hello.demo.member.Member;
+import hello.demo.member.MemberService;
 
 public class MemberApp {
 

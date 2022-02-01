@@ -1,4 +1,4 @@
-package hello.member;
+package hello.demo.member;
 
 public class Member {
 	private Long id;

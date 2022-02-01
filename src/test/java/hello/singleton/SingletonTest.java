@@ -8,7 +8,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import hello.demo.AppConfig;
-import hello.member.MemberService;
+import hello.demo.member.MemberService;
 
 public class SingletonTest {
 

@@ -1,4 +1,4 @@
-package hello.member;
+package hello.demo.member;
 
 public enum Grade {
 	BASIC,

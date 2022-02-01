@@ -5,11 +5,11 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import hello.demo.AppConfig;
-import hello.member.Grade;
-import hello.member.Member;
-import hello.member.MemberService;
-import hello.order.Order;
-import hello.order.OrderService;
+import hello.demo.member.Grade;
+import hello.demo.member.Member;
+import hello.demo.member.MemberService;
+import hello.demo.order.Order;
+import hello.demo.order.OrderService;
 
 public class OrderServiceTest {
 
