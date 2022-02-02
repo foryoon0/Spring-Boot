@@ -3,6 +3,7 @@ package hello.demo.order;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import hello.demo.annotation.MainDiscountPolicy;
 import hello.demo.discount.DiscountPolicy;
 import hello.demo.member.Member;
 import hello.demo.member.MemberRepository;
@@ -11,15 +12,14 @@ import hello.demo.member.MemberRepository;
 public class OrderServiceImpl implements OrderService{
 
 	private final MemberRepository memberRepository;
-	private DiscountPolicy discountPolicy;
-	
+	private final DiscountPolicy discountPolicy;
 	
 	@Autowired
-	public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
+	public OrderServiceImpl(MemberRepository memberRepository, @MainDiscountPolicy DiscountPolicy DiscountPolicy) 
+	{
 		this.memberRepository = memberRepository;
-		this.discountPolicy = discountPolicy;
+		this.discountPolicy = DiscountPolicy;
 	}
-
 
 	@Override
 	public Order createOrder(Long memberId, String itemName, int itemPrice) {
